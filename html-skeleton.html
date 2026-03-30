@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorrowMySkill - Skill Listings</title>
+
+    <!-- ✅ Updated CSS file name -->
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+
+<h1>BorrowMySkill - Add Skill</h1>
+
+<div class="form-box">
+
+    <input type="text" id="title" placeholder="Enter Skill Title">
+
+    <select id="category">
+        <option value="">Select Category</option>
+        <option>Cooking</option>
+        <option>Cleaning</option>
+        <option>Painting</option>
+        <option>Repair</option>
+        <option>Tutoring</option>
+        <option>Other</option>
+    </select>
+
+    <input type="number" id="price" placeholder="Enter Price">
+
+    <select id="type">
+        <option>Hourly</option>
+        <option>Fixed</option>
+    </select>
+
+    <textarea id="desc" placeholder="Enter Description"></textarea>
+
+    <input type="text" id="availability" placeholder="Availability">
+
+    <button onclick="addSkill()">Add Skill</button>
+
+</div>
+
+<div id="skills-container"></div>
+
+<!-- ✅ JS file name already correct -->
+<script src="script.js"></script>
+</body>
+</html>
